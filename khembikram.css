@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  background-color: #dedede;
+  position: fixed;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav_insider {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav_menu ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav_menu ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav_menu a {
+  color: #000;
+  text-decoration: none;
+}
+.nav_menu ul li button {
+  background-color: black;
+  color: aliceblue;
+  padding: 5px 10px;
+  border-radius: 9px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  background: url("./bg_cover.jpeg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero_insider {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.auto-type {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+.hero_right {
+  font-size: 50px;
+  font-weight: 500;
+  width: 580px;
+}
+
+.about_insider {
+  width: 90%;
+  margin: 20px auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_header {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.card_1 {
+  background-color: #dedede;
+  border-radius: 12px;
+  height: 360px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_body {
+  padding: 0px 20px;
+}
+
+.img1 {
+  height: 100px;
+  width: 100px;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_insider {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.contact_header {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 15px 20px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 12px;
+}
+input {
+  width: 255px;
+}
+
+.submit_btn {
+  background-color: black;
+  color: #ffff;
+  border-radius: 15px;
+  padding: 15px 25px;
+  width: 150px;
+}
+
+.text_area {
+  display: flex;
+  gap: 20px;
+}
+
+.text_main1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+textarea {
+  width: 545px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.footer_insider {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  font-size: 25px;
+  margin-right: 20px;
+  color: rosybrown;
+}
+
+.hero_img {
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  box-shadow: 1px 2px 17px 9px rgba(130, 125, 125, 0.76);
+}
+
+.hero_left:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.bars {
+  display: none;
+}
+@media (max-width: 1210px) {
+  .contact_form {
+    flex-direction: column;
+  }
+  .about_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .card_1 {
+    margin-top: 30px;
+  }
+  .hero_insider {
+    flex-direction: column-reverse;
+    justify-content: space-evenly !important;
+    padding-top: 90px;
+  }
+  .hero_right {
+    width: auto;
+  }
+  .navigation {
+    position: absolute;
+  }
+  .nav_menu {
+    display: none;
+    position: relative;
+    top: 129px;
+    box-shadow: inset 0 0 2000px rgba(14, 14, 14, 0.5);
+    text-align: center;
+    width: 100%;
+  }
+  .nav_menu ul {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .nav_menu a {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: #ffff;
+  }
+  .nav_menu a li {
+    font-size: 19px;
+  }
+  .button1 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .about_insider {
+    height: auto !important;
+  }
+  .contact_img1 {
+    width: 100%;
+  }
+  .text_area {
+    flex-direction: column;
+  }
+  textarea {
+    width: 100% !important;
+  }
+  input {
+    width: 100% !important;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  .footer {
+    height: 100px !important;
+  }
+  .footer_insider {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero_img {
+    width: 100%;
+    height: 100%;
+  }
+  .bars {
+    display: block !important;
+    font-size: 30px;
+  }
+}
